@@ -41,7 +41,7 @@ function About() {
                   <th ><FontAwesomeIcon icon={faEye} className="mr-2" /></th>
                 </tr>
                 <tr>
-                <th scope="row"><FontAwesomeIcon icon={faCircle} className="mr-2" /></th>
+                <th scope="row" ><Button style={{backgroundColor:'white',borderColor:'white',color:'black'}} tag={Link} to={"/about1"}> <FontAwesomeIcon icon={faCircle} className="mr-2" /></Button></th>
                   <td>Procurement Team</td>
                   <td><Button className="buttonn">Restricted Access</Button></td>
                   <td>8</td>
@@ -49,7 +49,7 @@ function About() {
                   <th ><FontAwesomeIcon icon={faEye} className="mr-2" /></th>
                 </tr>
                 <tr>
-                <th scope="row"><FontAwesomeIcon icon={faCircle} className="mr-2" /></th>
+                <th scope="row" ><Button style={{backgroundColor:'white',borderColor:'white',color:'black'}} tag={Link} to={"/about1"}> <FontAwesomeIcon icon={faCircle} className="mr-2" /></Button></th>
                   <td>Project Team</td>
                   <td><Button className="buttonn">Restricted Access</Button></td>
                   <td>16</td>
@@ -57,7 +57,7 @@ function About() {
                   <th ><FontAwesomeIcon icon={faEye} className="mr-2" /></th>
                 </tr>
                 <tr>
-                <th scope="row"><FontAwesomeIcon icon={faCircle} className="mr-2" /></th>
+                <th scope="row" ><Button style={{backgroundColor:'white',borderColor:'white',color:'black'}} tag={Link} to={"/about1"}> <FontAwesomeIcon icon={faCircle} className="mr-2" /></Button></th>
                   <td>IT Team</td>
                   <td><Button className="buttonn">Restricted Access</Button></td>
                   <td>4</td>
@@ -65,7 +65,7 @@ function About() {
                   <th ><FontAwesomeIcon icon={faEye} className="mr-2" /></th>
                 </tr>
                 <tr>
-                <th scope="row"><FontAwesomeIcon icon={faCircle} className="mr-2" /></th>
+                <th scope="row" ><Button style={{backgroundColor:'white',borderColor:'white',color:'black'}} tag={Link} to={"/about1"}> <FontAwesomeIcon icon={faCircle} className="mr-2" /></Button></th>
                   <td>Super Admin</td>
                   <td><Button className="buttoon">All Access</Button></td>
                   <td>1</td>

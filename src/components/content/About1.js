@@ -20,14 +20,44 @@ class  About1 extends React.Component {
     super();
     
     this.state = {
-      open: false
+      open1: false,
+      open: false,
+      open2: false,
+      open3: false,
+      open4: false,
+      open5: false
     }
   }  
   
+  toggleRow1(e) {
+    console.log('toggleRow');
+    
+    this.setState({open1: !this.state.open1});
+  }
   toggleRow(e) {
     console.log('toggleRow');
     
     this.setState({open: !this.state.open});
+  }
+  toggleRow2(e) {
+    console.log('toggleRow');
+    
+    this.setState({open2: !this.state.open2});
+  }
+  toggleRow3(e) {
+    console.log('toggleRow');
+    
+    this.setState({open3: !this.state.open3});
+  }
+  toggleRow4(e) {
+    console.log('toggleRow');
+    
+    this.setState({open4: !this.state.open4});
+  }
+  toggleRow5(e) {
+    console.log('toggleRow');
+    
+    this.setState({open5: !this.state.open5});
   }
   render(){
    
@@ -70,8 +100,9 @@ class  About1 extends React.Component {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th scope="row"><FontAwesomeIcon icon={faPlusCircle} className="mr-2" /></th>
+              <tr onClick={this.toggleRow1.bind(this)}>
+                <th scope="row" ><Button   style={{backgroundColor:'white',borderColor:'white',color:'black'}} tag={Link} to={"/about1"}> 
+                <FontAwesomeIcon icon={faPlusCircle} className="mr-2" /></Button></th>
                   <td>Budget</td>
                   <td><Button className="buttoon" >All Access</Button></td>
                   <td>View Create Edit Delete</td>
@@ -81,7 +112,9 @@ class  About1 extends React.Component {
                     <span class="slider round"></span></label>
                     </th>
                 </tr>
-                
+                <div>
+                <RowContent open={this.state.open1}/>
+                </div>
                 <tr onClick={this.toggleRow.bind(this)}>
                 <th scope="row" ><Button   style={{backgroundColor:'white',borderColor:'white',color:'black'}} tag={Link} to={"/about1"}> 
                 <FontAwesomeIcon icon={faPlusCircle} className="mr-2" /></Button></th>
@@ -99,8 +132,9 @@ class  About1 extends React.Component {
                 <RowContent open={this.state.open}/>
                 </div>
                 
-                <tr>
-                <th scope="row"><FontAwesomeIcon icon={faPlusCircle} className="mr-2" /></th>
+                <tr onClick={this.toggleRow2.bind(this)}>
+                <th scope="row" ><Button   style={{backgroundColor:'white',borderColor:'white',color:'black'}} tag={Link} to={"/about1"}> 
+                <FontAwesomeIcon icon={faPlusCircle} className="mr-2" /></Button></th>
                   <td>Vendor Portal</td>
                   <td><Button className="buttonn">Restricted Access</Button></td>
                   <td>View Create </td>
@@ -110,8 +144,12 @@ class  About1 extends React.Component {
                     <span class="slider round"></span></label>
                     </th>
                 </tr>
-                <tr>
-                <th scope="row"><FontAwesomeIcon icon={faPlusCircle} className="mr-2" /></th>
+                <div>
+                <RowContent open={this.state.open2}/>
+                </div>
+                <tr onClick={this.toggleRow3.bind(this)}>
+                <th scope="row" ><Button   style={{backgroundColor:'white',borderColor:'white',color:'black'}} tag={Link} to={"/about1"}> 
+                <FontAwesomeIcon icon={faPlusCircle} className="mr-2" /></Button></th>
                   <td>Purchase Order/Work Order</td>
                   <td><Button className="buttonn">Restricted Access</Button></td>
                   <td>View Create </td>
@@ -121,8 +159,12 @@ class  About1 extends React.Component {
                     <span class="slider round"></span></label>
                     </th>
                 </tr>
-                <tr>
-                <th scope="row"><FontAwesomeIcon icon={faPlusCircle} className="mr-2" /></th>
+                <div>
+                <RowContent open={this.state.open3}/>
+                </div>
+                <tr onClick={this.toggleRow4.bind(this)}>
+                <th scope="row" ><Button   style={{backgroundColor:'white',borderColor:'white',color:'black'}} tag={Link} to={"/about1"}> 
+                <FontAwesomeIcon icon={faPlusCircle} className="mr-2" /></Button></th>
                   <td>Organizational Profile</td>
                   <td><Button className="buttoon">All Access</Button></td>
                   <td>View Create Edit Delete</td>
@@ -132,8 +174,12 @@ class  About1 extends React.Component {
                     <span class="slider round"></span></label>
                     </th>
                 </tr>
-                <tr>
-                <th scope="row"><FontAwesomeIcon icon={faPlusCircle} className="mr-2" /></th>
+                <div>
+                <RowContent open={this.state.open4}/>
+                </div>
+                <tr onClick={this.toggleRow5.bind(this)}>
+                <th scope="row" ><Button   style={{backgroundColor:'white',borderColor:'white',color:'black'}} tag={Link} to={"/about1"}> 
+                <FontAwesomeIcon icon={faPlusCircle} className="mr-2" /></Button></th>
                   <td>Permission "/&"Access Control</td>
                   <td><Button className="bbutton">No Access</Button></td>
                   <td>-</td>
@@ -143,6 +189,9 @@ class  About1 extends React.Component {
                     <span class="slider round"></span></label>
                     </th>
                 </tr>
+                <div>
+                <RowContent open={this.state.open5}/>
+                </div>
               </tbody>
             </Table>
             </div>
